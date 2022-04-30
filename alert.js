@@ -1,11 +1,30 @@
 "use strict";
 
-let admin;
-let name;
+alert(typeof 0); // "number")
 
-name = "John";
-admin = name;
-alert(admin);
+// let isGreater = 4 > 1;
+
+// alert(isGreater); // true (the comparison result is "yes")
+
+// let str = "Hello";
+// let str2 = 'Single quotes are ok too';
+// let phrase = `can embed another ${str}`;
+
+// alert(phrase);
+
+// let ourPlanet = "Earth";
+// let visitor;
+// visitor = "Jamie";
+
+// alert(ourPlanet);
+// alert(visitor);
+
+// let admin;
+// let name;
+
+// name = "John";
+// admin = name;
+// alert(admin);
 
 // const COLOR_ORANGE = "#FF7F00";
 
