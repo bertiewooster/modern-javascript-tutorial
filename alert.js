@@ -1,16 +1,24 @@
 "use strict";
 
-let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+let nameGuess = prompt("What's the official name of JavaScript?")
+
+if (nameGuess == "ECMAScript") {
+    alert("Right!");
+} else {
+    alert("You don’t know? ECMAScript!");
+}
+
+// let year = prompt('In which year was ECMAScript-2015 specification published?', '');
 
 // let cond = (year == 2015); // equality evaluates to true or false
 
-if (year < 2015) {
-    alert("Too early");
-} else if (year > 2015) {
-    alert("Too late");
-} else {
-    alert("That's correct!");
-}
+// if (year < 2015) {
+//     alert("Too early");
+// } else if (year > 2015) {
+//     alert("Too late");
+// } else {
+//     alert("That's correct!");
+// }
 
 // let a = Number(prompt("First number?", 1));
 // let b = Number(prompt("Second number?", 2));
