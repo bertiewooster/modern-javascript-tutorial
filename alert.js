@@ -1,6 +1,9 @@
 "use strict";
 
-alert(typeof 0); // "number")
+let age = prompt("How old are you in years?", [30]);
+alert(`You said you are ${age} years old.`);
+// alert(typeof alert); // "number")
+// alert(typeof 0); // "number")
 
 // let isGreater = 4 > 1;
 
