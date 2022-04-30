@@ -2,9 +2,14 @@
 
 let year = prompt('In which year was ECMAScript-2015 specification published?', '');
 
-if (year == 2015) {
+// let cond = (year == 2015); // equality evaluates to true or false
+
+if (year < 2015) {
+    alert("Too early");
+} else if (year > 2015) {
+    alert("Too late");
+} else {
     alert("That's correct!");
-    alert("You're so smart!");
 }
 
 // let a = Number(prompt("First number?", 1));
