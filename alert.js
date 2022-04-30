@@ -1,7 +1,23 @@
 "use strict";
 
-let age = prompt("How old are you in years?", 22);
-alert(`You said you are ${age} years old.`);
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+
+if (year == 2015) {
+    alert("That's correct!");
+    alert("You're so smart!");
+}
+
+// let a = Number(prompt("First number?", 1));
+// let b = Number(prompt("Second number?", 2));
+
+// alert(a + b); // 12
+
+// let name = prompt("What is your name?", "");
+// alert(`Your name is ${name}.`);
+
+// let age = prompt("How old are you in years?", 22);
+// alert(`You said you are ${age} years old.`);
+
 // alert(typeof alert); // "number")
 // alert(typeof 0); // "number")
 
