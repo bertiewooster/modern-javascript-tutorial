@@ -1,6 +1,6 @@
 "use strict";
 
-let age = prompt("How old are you in years?", [30]);
+let age = prompt("How old are you in years?", 22);
 alert(`You said you are ${age} years old.`);
 // alert(typeof alert); // "number")
 // alert(typeof 0); // "number")
