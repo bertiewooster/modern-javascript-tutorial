@@ -1,17 +1,26 @@
 "use strict";
 
-let max = prompt("Output prime numbers up to a max of", 4);
+// let n = 10;
+
+// nextPrime:
+// for (let i = 2; i <= n; i++) { // for each i...
+
+//     for (let j = 2; j < i; j++) { // look for a divisor..
+//         if (i % j == 0) continue nextPrime; // not a prime, go next i
+//     }
+
+//     alert(i); // a prime
+// }
+
+// let max = 10;
+let max = prompt("Output prime numbers up to a max of", 10);
 let denom;
 
-iLoop: for (let i = 3; i <= max; i++) {
+iLoop: for (let i = 2; i <= max; i++) {
     // alert(`${i} is being tested.`)
-    denom = 2;
-    while (denom <= i / 2) {
-        // while (denom <= i) {
-        if (i % denom == 0) {
-            continue iLoop;
-        }
-        denom++;
+    // denom = 2;
+    for (let denom = 2; denom < i; denom++) {
+        if (i % denom == 0) continue iLoop;
     }
     alert(`${i} is a prime number.`)
 }
