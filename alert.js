@@ -19,7 +19,7 @@ let denom;
 iLoop: for (let i = 2; i <= max; i++) {
     // alert(`${i} is being tested.`)
     // denom = 2;
-    for (let denom = 2; denom < i; denom++) {
+    for (let denom = 2; denom <= Math.sqrt(i); denom++) {
         if (i % denom == 0) continue iLoop;
     }
     alert(`${i} is a prime number.`)
