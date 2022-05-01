@@ -1,26 +1,36 @@
 "use strict";
 
-let age = 20;
-
-function checkAge(age) {
-    if (age > 18) {
-        return true;
+function min(a, b) {
+    if (a <= b) {
+        return a
     } else {
-        return confirm('Did parents allow you?');
+        return b
     }
 }
 
-function checkAgeQuestionMark(age) {
-    return (age > 18) ? true : confirm('checkAgeQuestionMark: Did parents allow you?');
-}
+alert(min(3, 2));
 
-function checkAgeOR(age) {
-    return (age > 18 || confirm('checkAgeOR: Did parents allow you?'));
-}
+// let age = 20;
 
-checkAge(age);
-checkAgeQuestionMark(age);
-checkAgeOR(age);
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('Did parents allow you?');
+//     }
+// }
+
+// function checkAgeQuestionMark(age) {
+//     return (age > 18) ? true : confirm('checkAgeQuestionMark: Did parents allow you?');
+// }
+
+// function checkAgeOR(age) {
+//     return (age > 18 || confirm('checkAgeOR: Did parents allow you?'));
+// }
+
+// checkAge(age);
+// checkAgeQuestionMark(age);
+// checkAgeOR(age);
 
 // let a = +prompt('a?', '');
 
