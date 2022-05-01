@@ -1,12 +1,25 @@
 "use strict";
 
-let nameGuess = prompt("What's the official name of JavaScript?")
+let input_number = Number(prompt("Please enter a number", ""));
+let sign
 
-if (nameGuess == "ECMAScript") {
-    alert("Right!");
-} else {
-    alert("You don’t know? ECMAScript!");
+if (input_number > 0) {
+    sign = 1;
+} else if (input_number < 0) {
+    sign = -1;
+} else if (input_number == 0) {
+    sign = 0;
 }
+
+alert(sign);
+
+// let nameGuess = prompt("What's the official name of JavaScript?")
+
+// if (nameGuess == "ECMAScript") {
+//     alert("Right!");
+// } else {
+//     alert("You don’t know? ECMAScript!");
+// }
 
 // let year = prompt('In which year was ECMAScript-2015 specification published?', '');
 
