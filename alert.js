@@ -1,33 +1,55 @@
 "use strict";
 
-let a = +prompt('a?', '');
+let age = 20;
 
-// If block...
-if (a == 0) {
-    alert(0);
-}
-if (a == 1) {
-    alert(1);
-}
-
-if (a == 2 || a == 3) {
-    alert('2,3');
+function checkAge(age) {
+    if (age > 18) {
+        return true;
+    } else {
+        return confirm('Did parents allow you?');
+    }
 }
 
-// ...transformed into switch case block
-switch (a) {
-    case 0:
-        alert(0);
-        break;
-    case 1:
-        alert(1);
-        break;
-    case 2:
-    case 3:
-        alert("2,3");
-        break;
-
+function checkAgeQuestionMark(age) {
+    return (age > 18) ? true : confirm('checkAgeQuestionMark: Did parents allow you?');
 }
+
+function checkAgeOR(age) {
+    return (age > 18 || confirm('checkAgeOR: Did parents allow you?'));
+}
+
+checkAge(age);
+checkAgeQuestionMark(age);
+checkAgeOR(age);
+
+// let a = +prompt('a?', '');
+
+// // If block...
+// if (a == 0) {
+//     alert(0);
+// }
+// if (a == 1) {
+//     alert(1);
+// }
+
+// if (a == 2 || a == 3) {
+//     alert('2,3');
+// }
+
+// // ...transformed into switch case block
+// switch (a) {
+//     case 0:
+//         alert(0);
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//     case 3:
+//         alert("2,3");
+//         break;
+
+// }
 
 // let browser = prompt("Which browser are you using?", "")
 
