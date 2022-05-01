@@ -1,10 +1,10 @@
 "use strict";
 
-let i = 3;
-while (i) {
+let i = 1;
+do {
     alert(i);
-    i--;
-}
+    i++;
+} while (i < 3);
 
 // let age = prompt("How old are you?", "");
 
