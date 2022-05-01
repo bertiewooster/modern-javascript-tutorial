@@ -1,10 +1,18 @@
 "use strict";
 
-let i = 1;
-do {
+// for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+//     alert(i);
+// }
+
+for (let i = 2; i <= 10; i += 2) {
     alert(i);
-    i++;
-} while (i < 3);
+}
+
+// let i = 1;
+// do {
+//     alert(i);
+//     i++;
+// } while (i < 3);
 
 // let age = prompt("How old are you?", "");
 
