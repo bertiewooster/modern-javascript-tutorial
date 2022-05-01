@@ -1,17 +1,30 @@
 "use strict";
 
-let input_number = Number(prompt("Please enter a number", ""));
-let sign
+// let age = 9;
 
-if (input_number > 0) {
-    sign = 1;
-} else if (input_number < 0) {
-    sign = -1;
-} else if (input_number == 0) {
-    sign = 0;
-}
+// let accessAllowed = age > 18 ? true : false;
+// alert(accessAllowed);
 
-alert(sign);
+let result;
+let a = 2;
+let b = 2;
+
+result = (a + b < 4) ? 'Below' : 'Over';
+
+alert(result);
+
+// let input_number = Number(prompt("Please enter a number", ""));
+// let sign;
+
+// if (input_number > 0) {
+//     sign = 1;
+// } else if (input_number < 0) {
+//     sign = -1;
+// } else if (input_number == 0) {
+//     sign = 0;
+// }
+
+// alert(sign);
 
 // let nameGuess = prompt("What's the official name of JavaScript?")
 
