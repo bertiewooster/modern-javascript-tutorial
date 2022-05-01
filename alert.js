@@ -1,11 +1,16 @@
 "use strict";
 
-let i = 0;
+let inputNumber;
+do {
+    inputNumber = prompt("Please enter a number greater than 100", "")
+} while (inputNumber <= 100 && inputNumber);
 
-while (i < 3) {
-    alert(`number ${i}!`);
-    i++;
-}
+// let i = 0;
+
+// while (i < 3) {
+//     alert(`number ${i}!`);
+//     i++;
+// }
 
 // for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
 //     alert(i);
