@@ -1,13 +1,30 @@
 "use strict";
 
-function pow(x, n) {
-    return x ** n;
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
 }
 
-let x = Number(prompt("x", ""));
-let n = Number(prompt("n", ""));
+ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+);
 
-alert(pow(x, n));
+ask(
+    "Do you agree?",
+    function () { alert("You agreed."); },
+    function () { alert("You canceled the execution."); }
+);
+
+// function pow(x, n) {
+//     return x ** n;
+// }
+
+// let x = Number(prompt("x", ""));
+// let n = Number(prompt("n", ""));
+
+// alert(pow(x, n));
 
 // function min(a, b) {
 //     if (a <= b) {
