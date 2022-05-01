@@ -1,9 +1,25 @@
 "use strict";
 
-let inputNumber;
-do {
-    inputNumber = prompt("Please enter a number greater than 100", "")
-} while (inputNumber <= 100 && inputNumber);
+let max = prompt("Output prime numbers up to a max of", 4);
+let denom;
+
+iLoop: for (let i = 3; i <= max; i++) {
+    // alert(`${i} is being tested.`)
+    denom = 2;
+    while (denom <= i / 2) {
+        // while (denom <= i) {
+        if (i % denom == 0) {
+            continue iLoop;
+        }
+        denom++;
+    }
+    alert(`${i} is a prime number.`)
+}
+
+// let inputNumber;
+// do {
+//     inputNumber = prompt("Please enter a number greater than 100", "")
+// } while (inputNumber <= 100 && inputNumber);
 
 // let i = 0;
 
