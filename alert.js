@@ -1,17 +1,28 @@
 "use strict";
 
+let login = prompt("Who are you?", "Employee");
+
+let message;
+
+message = (login == 'Employee') ? 'Hello' :
+    (login == 'Director') ? 'Greetings' :
+        (login == '') ? 'No login' :
+            "";
+
+alert(message);
+
 // let age = 9;
 
 // let accessAllowed = age > 18 ? true : false;
 // alert(accessAllowed);
 
-let result;
-let a = 2;
-let b = 2;
+// let result;
+// let a = 2;
+// let b = 2;
 
-result = (a + b < 4) ? 'Below' : 'Over';
+// result = (a + b < 4) ? 'Below' : 'Over';
 
-alert(result);
+// alert(result);
 
 // let input_number = Number(prompt("Please enter a number", ""));
 // let sign;
