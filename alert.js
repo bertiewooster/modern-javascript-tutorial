@@ -1,12 +1,18 @@
 "use strict";
 
-let age = prompt("How old are you?", "");
-
-if (age < 14 || age > 90) {
-    alert("Age is not between 14 and 90");
-} else {
-    alert("Age is between 14 and 90");
+let i = 0;
+while (i < 3) {
+    alert(i);
+    i++;
 }
+
+// let age = prompt("How old are you?", "");
+
+// if (age < 14 || age > 90) {
+//     alert("Age is not between 14 and 90");
+// } else {
+//     alert("Age is between 14 and 90");
+// }
 
 // let login = prompt("Who are you?", "Employee");
 
