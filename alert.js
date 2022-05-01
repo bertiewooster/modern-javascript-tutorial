@@ -1,15 +1,23 @@
 "use strict";
 
-let login = prompt("Who are you?", "Employee");
+let age = prompt("How old are you?", "");
 
-let message;
+if (age < 14 || age > 90) {
+    alert("Age is not between 14 and 90");
+} else {
+    alert("Age is between 14 and 90");
+}
 
-message = (login == 'Employee') ? 'Hello' :
-    (login == 'Director') ? 'Greetings' :
-        (login == '') ? 'No login' :
-            "";
+// let login = prompt("Who are you?", "Employee");
 
-alert(message);
+// let message;
+
+// message = (login == 'Employee') ? 'Hello' :
+//     (login == 'Director') ? 'Greetings' :
+//         (login == '') ? 'No login' :
+//             "";
+
+// alert(message);
 
 // let age = 9;
 
