@@ -1,5 +1,34 @@
 "use strict";
 
+let browser = prompt("Which browser are you using?", "")
+
+// switch (browser) {
+//     case 'Edge':
+//         alert("You've got the Edge!");
+//         break;
+
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//         alert('Okay we support these browsers too');
+//         break;
+
+//     default:
+//         alert('We hope that this page looks ok!');
+// }
+
+if (browser == "Edge") {
+    alert("You've got the Edge!");
+} else if (browser == "Chrome"
+    || browser == "Firefox"
+    || browser == "Safari"
+    || browser == "Opera") {
+    alert('Okay we support these browsers too');
+} else {
+    alert('We hope that this page looks ok!');
+}
+
 // let n = 10;
 
 // nextPrime:
@@ -13,17 +42,17 @@
 // }
 
 // let max = 10;
-let max = prompt("Output prime numbers up to a max of", 10);
-let denom;
+// let max = prompt("Output prime numbers up to a max of", 10);
+// let denom;
 
-iLoop: for (let i = 2; i <= max; i++) {
-    // alert(`${i} is being tested.`)
-    // denom = 2;
-    for (let denom = 2; denom <= Math.sqrt(i); denom++) {
-        if (i % denom == 0) continue iLoop;
-    }
-    alert(`${i} is a prime number.`)
-}
+// iLoop: for (let i = 2; i <= max; i++) {
+//     // alert(`${i} is being tested.`)
+//     // denom = 2;
+//     for (let denom = 2; denom <= Math.sqrt(i); denom++) {
+//         if (i % denom == 0) continue iLoop;
+//     }
+//     alert(`${i} is a prime number.`)
+// }
 
 // let inputNumber;
 // do {
