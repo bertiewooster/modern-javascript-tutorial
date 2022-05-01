@@ -1,14 +1,23 @@
 "use strict";
 
-function min(a, b) {
-    if (a <= b) {
-        return a
-    } else {
-        return b
-    }
+function pow(x, n) {
+    return x ** n;
 }
 
-alert(min(3, 2));
+let x = Number(prompt("x", ""));
+let n = Number(prompt("n", ""));
+
+alert(pow(x, n));
+
+// function min(a, b) {
+//     if (a <= b) {
+//         return a
+//     } else {
+//         return b
+//     }
+// }
+
+// alert(min(3, 2));
 
 // let age = 20;
 
